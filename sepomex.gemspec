@@ -5,7 +5,7 @@ require "sepomex/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "sepomex"
+  spec.name        = "sepomex_client"
   spec.version     = SEPOMEX::VERSION
   spec.date        = '2019-12-10'
   spec.description = "SEPOMEX is a ruby integration to SEPOMEX clients for zip code information gathering"
