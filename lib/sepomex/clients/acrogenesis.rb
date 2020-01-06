@@ -1,4 +1,4 @@
-module ZipCode
+module SEPOMEX
   module Clients
     class Acrogenesis
       def initialize(zip_code)

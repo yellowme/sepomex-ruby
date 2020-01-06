@@ -1,6 +1,6 @@
 require 'webmock/rspec'
 
-RSpec.describe ZipCode::Strategy do
+RSpec.describe SEPOMEX::Strategy do
   zip_code = '97305'
 
   let(:sepomex_zip_code_response) do
@@ -114,7 +114,7 @@ RSpec.describe ZipCode::Strategy do
       it do
         expect do
           described_class.call(zip_code)
-        end.to raise_error ZipCode::DataNotFoundError
+        end.to raise_error SEPOMEX::DataNotFoundError
       end
     end
 

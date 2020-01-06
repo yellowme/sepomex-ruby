@@ -1,4 +1,4 @@
-module ZipCode
+module SEPOMEX
   class Strategy
     ACROGENESIS = 'acrogenesis'.freeze
     HCKDRK = 'hckdrk'.freeze
@@ -32,9 +32,9 @@ module ZipCode
     def processor(client)
       case client
       when HCKDRK
-        ZipCode::Clients::Hckdrk.new(@zip_code)
+        SEPOMEX::Clients::Hckdrk.new(@zip_code)
       when ACROGENESIS
-        ZipCode::Clients::Acrogenesis.new(@zip_code)
+        SEPOMEX::Clients::Acrogenesis.new(@zip_code)
       else
         raise ArgumentError
       end

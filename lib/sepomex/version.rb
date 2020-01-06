@@ -1,3 +1,3 @@
-module ZipCode
+module SEPOMEX
   VERSION = '0.1.0'
 end

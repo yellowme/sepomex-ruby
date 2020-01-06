@@ -1,4 +1,4 @@
-module ZipCode
+module SEPOMEX
   class DataNotFoundError < StandardError
   end
 end

@@ -1,4 +1,4 @@
-module ZipCode
+module SEPOMEX
   module Clients
     class Hckdrk
       def initialize(zip_code)

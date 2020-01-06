@@ -19,7 +19,9 @@ GIT
 PATH
   remote: .
   specs:
-    zip-code-ruby (0.1.0)
+    sepomex (0.1.0)
+      sepomex_acrogenesis (~> 0.2)
+      sepomex_hckdrk (~> 0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -64,6 +66,14 @@ GEM
       rspec-support (~> 3.9.0)
     rspec-support (3.9.2)
     safe_yaml (1.0.5)
+    sepomex_acrogenesis (0.2.0)
+      activesupport (~> 6.0)
+      httparty (~> 0.17)
+      json (~> 2.2)
+    sepomex_hckdrk (0.1.0)
+      activesupport (~> 6.0)
+      httparty (~> 0.17)
+      json (~> 2.2)
     simplecov (0.17.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -82,12 +92,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rspec
+  rspec (~> 3.8)
+  sepomex!
   sepomex-acrogenesis-ruby!
   sepomex-hckdrk-ruby!
-  simplecov
-  webmock
-  zip-code-ruby!
+  simplecov (~> 0.17)
+  webmock (~> 3.7)
 
 BUNDLED WITH
    2.0.2
