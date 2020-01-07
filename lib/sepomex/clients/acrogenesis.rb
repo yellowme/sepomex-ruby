@@ -11,7 +11,7 @@ module SEPOMEX
       # @raise [SepomexError]
       #
       def query
-        SEPOMEX_ACROGENESIS::General.info_zip_code(zip_code: @zip_code)
+        SEPOMEX_Acrogenesis::General.info_zip_code(zip_code: @zip_code)
       end
     end
   end

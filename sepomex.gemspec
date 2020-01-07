@@ -10,14 +10,16 @@ Gem::Specification.new do |spec|
   spec.date        = '2019-12-10'
   spec.description = "SEPOMEX is a ruby integration to SEPOMEX clients for zip code information gathering"
   spec.summary     = "SEPOMEX is a library that integrates to multiple SEPOMEX clients for MX zip code information gathering"
-  spec.files       = ["lib/sepomex.rb"]
+  spec.files       = `git ls-files`.split($/)
+  spec.executables = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   spec.authors     = ["Yellowme"]
   spec.email       = 'hola@yellowme.mx'
   spec.homepage    = 'https://github.com/yellowme/sepomex-ruby'
   spec.license      = 'MIT'
 
-  spec.add_dependency "sepomex_acrogenesis", "~> 0.2"
-  spec.add_dependency 'sepomex_hckdrk', "~> 0.1"
+  spec.add_dependency "sepomex_acrogenesis", "~> 0.5.2"
+  spec.add_dependency 'sepomex_hckdrk', "~> 0.4.1"
 
   spec.add_development_dependency "rspec", "~> 3.8"
   spec.add_development_dependency "webmock", "~> 3.7"
